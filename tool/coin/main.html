@@ -30,37 +30,36 @@
 </head>
 <body>
     
-    <div class="container">
-        <div class="box" id="coin">
-            <div style = "background-image: url('img/coin1_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
-        </div>
+<div class="container">
+    <div class="box" id="coin">
+        <div style = "background-image: url('img/coin1_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
     </div>
+</div>
 
 
-    <script>
-        const coin = document.getElementById("coin")
-        
-        document.querySelector(".container").addEventListener("click", () => {
-            coin.innerHTML = "";
+<script>
+    const coin = document.getElementById("coin")
+    
+    document.querySelector(".container").addEventListener("click", () => {
+        coin.innerHTML = "";
 
-            let i = Math.floor(Math.random()*10);
+        let i = Math.floor(Math.random()*10);
 
-            setTimeout(() => {
+        setTimeout(() => {
 
-                if (i > 5){
-                    coin.innerHTML = `
-                    <div style = "background-image: url('img/coin1_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
-                    `;
-                }else{
-                    coin.innerHTML = `
-                    <div style = "background-image: url('img/coin2_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
-                    `;
-            }
-            }, 800);
+            if (i > 5){
+                coin.innerHTML = `
+                <div style = "background-image: url('img/coin1_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
+                `;
+            }else{
+                coin.innerHTML = `
+                <div style = "background-image: url('img/coin2_32x32_x4_2.png');width: 128px; height: 128px;background-size: contain;"></div>
+                `;
+        }
+        }, 800);
 
-        });
-                
-        
-    </script>
+    });
+</script>
+
 </body>
 </html>

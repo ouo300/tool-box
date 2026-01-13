@@ -4,12 +4,12 @@ const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
 
 const list = [
-{data:1, img:"img/dice/dice1_16x16_x4.png"}, 
-{data:2, img:"img/dice/dice2_16x16_x4.png"}, 
-{data:3, img:"img/dice/dice3_16x16_x4.png"}, 
-{data:4, img:"img/dice/dice4_16x16_x4.png"}, 
-{data:5, img:"img/dice/dice5_16x16_x4.png"}, 
-{data:6, img:"img/dice/dice6_16x16_x4.png"}
+{data:1, img:"img/dice1_16x16_x4.png"}, 
+{data:2, img:"img/dice2_16x16_x4.png"}, 
+{data:3, img:"img/dice3_16x16_x4.png"}, 
+{data:4, img:"img/dice4_16x16_x4.png"}, 
+{data:5, img:"img/dice5_16x16_x4.png"}, 
+{data:6, img:"img/dice6_16x16_x4.png"}
 ];
 
 
@@ -42,9 +42,6 @@ dice.addEventListener("click", ()=>{
     main.innerHTML = `<div class="dice-box">${html}</div>`;
     document.getElementById("total").innerHTML = total;
 });
-
-
-
 
 // 計數器
 btns.forEach(function(btn){ //針對陣列中的每個元素去做操作
